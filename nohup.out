@@ -1,0 +1,556 @@
+CompileCommand: exclude com/intellij/openapi/vfs/impl/FilePartNodeRoot.trieDescend bool exclude = true
+2023-01-10 12:41:17,673 [   6451]   WARN - #c.i.e.RunManager - Must be not called before project components initialized
+Info  | RdCoroutineScope          | 17:DefaultDispatcher-worker-6 | RdCoroutineHost overridden 
+2023-01-10 12:41:17,737 [   6515]   WARN - #c.i.u.j.JBCefApp - JCEF: minimum supported CEF major version is 104, current is 98 (Use JBR bundled with the IDE)
+2023-01-10 12:41:18,153 [   6931]   WARN - #c.i.o.w.i.ToolWindowImpl - ToolWindow icons should be 13x13. Please fix ToolWindow (ID:  JPA Buddy) or icon UrlResolver{ownerClass=com.haulmont.jpb.JpaIcons, classLoader=PluginClassLoader(plugin=PluginDescriptor(name=JPA Buddy, id=com.haulmont.jpab, descriptorPath=plugin.xml, path=~/.local/share/JetBrains/IntelliJIdea2022.3/jpa-buddy, version=2022.5.2-223, package=null, isBundled=false), packagePrefix=null, instanceId=358, state=active), overriddenPath='/META-INF/buddyIconMono.svg', url=file:/unresolved, useCacheOnLoad=true}
+2023-01-10 12:41:19,223 [   8001]   WARN - #o.j.i.maven - Using extension org.jetbrains.idea.maven.maven3.Maven3Support@359e8bc8 to start MavenServer
+Changing log factory from com.intellij.idea.LoggerFactory to com.haulmont.jpb.logger.JpabLoggerFactory
+java.lang.Throwable
+	at com.intellij.openapi.diagnostic.Logger.logFactoryChanged(Logger.java:79)
+	at com.intellij.openapi.diagnostic.Logger.setFactory(Logger.java:70)
+	at com.haulmont.jpb.action.persistenceunit.PersistenceUnitStartupActivity.runActivity(PersistenceUnitStartupActivity.kt:44)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runActivityAndMeasureDuration(StartupManagerImpl.kt:340)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.access$runActivityAndMeasureDuration(StartupManagerImpl.kt:66)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$2$3.invoke$lambda$0(StartupManagerImpl.kt:295)
+	at com.intellij.openapi.project.DumbServiceImpl.doRun(DumbServiceImpl.java:388)
+	at com.intellij.openapi.project.DumbServiceImpl.updateFinished(DumbServiceImpl.java:380)
+	at com.intellij.openapi.project.TrackedEdtActivityService$TrackedEdtActivity.run(TrackedEdtActivityService.java:66)
+	at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:209)
+	at com.intellij.openapi.application.TransactionGuardImpl.access$100(TransactionGuardImpl.java:21)
+	at com.intellij.openapi.application.TransactionGuardImpl$1.run(TransactionGuardImpl.java:191)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:813)
+	at com.intellij.openapi.application.impl.ApplicationImpl$3.run(ApplicationImpl.java:429)
+	at com.intellij.openapi.application.impl.FlushQueue.doRun(FlushQueue.java:74)
+	at com.intellij.openapi.application.impl.FlushQueue.runNextEvent(FlushQueue.java:114)
+	at com.intellij.openapi.application.impl.FlushQueue.flushNow(FlushQueue.java:36)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:779)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:730)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:724)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:749)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:909)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:756)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$5(IdeEventQueue.java:437)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:772)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$6(IdeEventQueue.java:436)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:105)
+	at com.intellij.ide.IdeEventQueue.performActivity(IdeEventQueue.java:615)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$7(IdeEventQueue.java:434)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:813)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:480)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
+
+2023-01-10 12:41:21,055 [   9833]   WARN - #c.i.u.x.Binding - no accessors for com.haulmont.jpb.model.dbtype.DbType
+2023-01-10 12:41:56,404 [  45182]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.springframework.boot:spring-boot-starter-jersey::3.0.1, was also in node: null
+2023-01-10 12:41:56,404 [  45182]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.springframework.boot:spring-boot-starter-validation::3.0.1, was also in node: null
+2023-01-10 12:41:56,405 [  45183]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.hibernate.validator:hibernate-validator::8.0.0.Final, was also in node: null
+2023-01-10 12:41:56,405 [  45183]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading jakarta.validation:jakarta.validation-api::3.0.2, was also in node: null
+2023-01-10 12:41:56,405 [  45183]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.jboss.logging:jboss-logging::3.5.0.Final, was also in node: null
+2023-01-10 12:41:56,405 [  45183]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.glassfish.jersey.containers:jersey-container-servlet-core::3.1.0, was also in node: null
+2023-01-10 12:41:56,405 [  45183]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading jakarta.inject:jakarta.inject-api::2.0.1, was also in node: null
+2023-01-10 12:41:56,405 [  45183]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.glassfish.jersey.core:jersey-common::3.1.0, was also in node: null
+2023-01-10 12:41:56,405 [  45183]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading jakarta.ws.rs:jakarta.ws.rs-api::3.1.0, was also in node: null
+2023-01-10 12:41:56,406 [  45184]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.glassfish.jersey.core:jersey-server::3.1.0, was also in node: null
+2023-01-10 12:41:56,406 [  45184]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.glassfish.jersey.containers:jersey-container-servlet::3.1.0, was also in node: null
+2023-01-10 12:41:56,406 [  45184]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.glassfish.jersey.core:jersey-client::3.1.0, was also in node: null
+2023-01-10 12:41:56,406 [  45184]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.glassfish.jersey.ext:jersey-bean-validation::3.1.0, was also in node: null
+2023-01-10 12:41:56,406 [  45184]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.glassfish.jersey.ext:jersey-spring6::3.1.0, was also in node: null
+2023-01-10 12:41:56,406 [  45184]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.glassfish.jersey.inject:jersey-hk2::3.1.0, was also in node: null
+2023-01-10 12:41:56,406 [  45184]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.glassfish.hk2:hk2-locator::3.0.3, was also in node: null
+2023-01-10 12:41:56,406 [  45184]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.glassfish.hk2.external:aopalliance-repackaged::3.0.3, was also in node: null
+2023-01-10 12:41:56,406 [  45184]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.glassfish.hk2:hk2-api::3.0.3, was also in node: null
+2023-01-10 12:41:56,406 [  45184]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.glassfish.hk2:hk2-utils::3.0.3, was also in node: null
+2023-01-10 12:41:56,406 [  45184]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.javassist:javassist::3.28.0-GA, was also in node: null
+2023-01-10 12:41:56,406 [  45184]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.glassfish.hk2:hk2::3.0.3, was also in node: null
+2023-01-10 12:41:56,406 [  45184]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading jakarta.inject:jakarta.inject-api::2.0.0, was also in node: null
+2023-01-10 12:41:56,406 [  45184]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.glassfish.hk2:hk2-core::3.0.3, was also in node: null
+2023-01-10 12:41:56,407 [  45185]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.glassfish.hk2:hk2-runlevel::3.0.3, was also in node: null
+2023-01-10 12:41:56,407 [  45185]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.glassfish.hk2:class-model::3.0.3, was also in node: null
+2023-01-10 12:41:56,407 [  45185]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.ow2.asm:asm-analysis::9.2, was also in node: null
+2023-01-10 12:41:56,407 [  45185]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.ow2.asm:asm-tree::9.2, was also in node: null
+2023-01-10 12:41:56,407 [  45185]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.ow2.asm:asm-commons::9.2, was also in node: null
+2023-01-10 12:41:56,407 [  45185]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.ow2.asm:asm-util::9.2, was also in node: null
+2023-01-10 12:41:56,407 [  45185]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.glassfish.hk2:spring-bridge::3.0.3, was also in node: null
+2023-01-10 12:41:56,407 [  45185]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.glassfish.jersey.media:jersey-media-json-jackson::3.1.0, was also in node: null
+2023-01-10 12:41:56,407 [  45185]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading org.glassfish.jersey.ext:jersey-entity-filtering::3.1.0, was also in node: null
+2023-01-10 12:41:56,407 [  45185]   WARN - #c.i.b.BuildTreeConsoleView - start event id collision found:Downloading com.fasterxml.jackson.module:jackson-module-jakarta-xmlbind-annotations::2.14.1, was also in node: null
+2023-01-10 12:46:21,204 [ 309982]   WARN - #c.i.u.x.Binding - no accessors for com.intellij.openapi.project.Project
+2023-01-10 12:57:46,366 [ 995144]   WARN - #c.i.i.a.s.WaitForContributorsListenerWrapper - Contributor (ActionSearchEverywhereContributor) did not finish search in timeout (3000). Maybe it should implement PossibleSlowContributor interface
+2023-01-10 13:00:58,141 [1186919]   WARN - c.i.r.m.AetherClient - Failed to download 'reserved.recommenders:metadata::json:0.0.0' from models (https://jb-dap-test.s3.eu-central-1.amazonaws.com/channels/2020.3/repositories/models, default, releases+snapshots)
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not transfer artifact reserved.recommenders:metadata:json:0.0.0-SNAPSHOT from/to models (https://jb-dap-test.s3.eu-central-1.amazonaws.com/channels/2020.3/repositories/models): Connect to jb-dap-test.s3.eu-central-1.amazonaws.com:443 timed out
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:425)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:229)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:207)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:262)
+	at com.intellij.recommenders.models.AetherClient.resolveInternal(AetherClient.java:170)
+	at com.intellij.recommenders.models.AetherClient.resolve(AetherClient.java:148)
+	at com.intellij.recommenders.models.AetherClient.resolve(AetherClient.java:132)
+	at com.intellij.recommenders.models.AetherBasedModelsRepository.refresh(ModelsRepository.kt:47)
+	at com.intellij.recommenders.models.TxtBasedModelsIndex$loadMetadata$$inlined$runAsync$1.run(promise.kt:421)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:702)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:699)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:699)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact reserved.recommenders:metadata:json:0.0.0-SNAPSHOT from/to models (https://jb-dap-test.s3.eu-central-1.amazonaws.com/channels/2020.3/repositories/models): Connect to jb-dap-test.s3.eu-central-1.amazonaws.com:443 timed out
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:52)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:368)
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:75)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:642)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:262)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:514)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:402)
+	... 15 more
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to jb-dap-test.s3.eu-central-1.amazonaws.com:443 timed out
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:545)
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:415)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.impl.client.DecompressingHttpClient.execute(DecompressingHttpClient.java:164)
+	at org.eclipse.aether.transport.http.HttpTransporter.execute(HttpTransporter.java:296)
+	at org.eclipse.aether.transport.http.HttpTransporter.implGet(HttpTransporter.java:252)
+	at org.eclipse.aether.spi.connector.transport.AbstractTransporter.get(AbstractTransporter.java:68)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:456)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:363)
+	... 20 more
+2023-01-10 13:01:38,178 [1226956]   WARN - c.i.r.m.AetherClient - Failed to download 'reserved.recommenders:index::txt:0.0.0' from models (https://jb-dap-test.s3.eu-central-1.amazonaws.com/channels/2020.3/repositories/models, default, releases+snapshots)
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not transfer artifact reserved.recommenders:index:txt:0.0.0-SNAPSHOT from/to models (https://jb-dap-test.s3.eu-central-1.amazonaws.com/channels/2020.3/repositories/models): Connect to jb-dap-test.s3.eu-central-1.amazonaws.com:443 timed out
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:425)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:229)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:207)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:262)
+	at com.intellij.recommenders.models.AetherClient.resolveInternal(AetherClient.java:170)
+	at com.intellij.recommenders.models.AetherClient.resolve(AetherClient.java:148)
+	at com.intellij.recommenders.models.AetherClient.resolve(AetherClient.java:132)
+	at com.intellij.recommenders.models.AetherBasedModelsRepository.refresh(ModelsRepository.kt:47)
+	at com.intellij.recommenders.models.PersistentMapModelsIndex.refresh(ModelsIndex.kt:134)
+	at com.intellij.recommenders.models.ModelsIndexWithRefresh.scheduleIndexUpdatesJob$lambda$0(ModelsIndex.kt:196)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at com.intellij.util.concurrency.SchedulingWrapper$MyScheduledFutureTask.run(SchedulingWrapper.java:275)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:702)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:699)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:699)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact reserved.recommenders:index:txt:0.0.0-SNAPSHOT from/to models (https://jb-dap-test.s3.eu-central-1.amazonaws.com/channels/2020.3/repositories/models): Connect to jb-dap-test.s3.eu-central-1.amazonaws.com:443 timed out
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:52)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:368)
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:75)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:642)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:262)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:514)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:402)
+	... 19 more
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to jb-dap-test.s3.eu-central-1.amazonaws.com:443 timed out
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:545)
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:415)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.impl.client.DecompressingHttpClient.execute(DecompressingHttpClient.java:164)
+	at org.eclipse.aether.transport.http.HttpTransporter.execute(HttpTransporter.java:296)
+	at org.eclipse.aether.transport.http.HttpTransporter.implGet(HttpTransporter.java:252)
+	at org.eclipse.aether.spi.connector.transport.AbstractTransporter.get(AbstractTransporter.java:68)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:456)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:363)
+	... 24 more
+2023-01-10 13:03:18,498 [1327276]   WARN - #c.i.u.x.Binding - no accessors for org.jetbrains.idea.perforce.perforce.ConnectionId
+2023-01-10 13:04:13,326 [1382104]   WARN - #o.j.k.i.s.r.KotlinCompilerReferenceIndexStorage - kotlin-data-container is not found
+2023-01-10 13:09:31,086 [1699864]   WARN - #o.j.k.i.s.r.KotlinCompilerReferenceIndexStorage - kotlin-data-container is not found
+2023-01-10 13:14:38,523 [2007301]   WARN - #com.android.tools.idea.avdmanager.AvdManagerConnection - No Android SDK Found
+2023-01-10 13:16:37,404 [2126182]   WARN - c.i.r.m.AetherClient - Failed to download 'reserved.recommenders:metadata::json:0.0.0' from models (https://jb-dap-test.s3.eu-central-1.amazonaws.com/repositories/java-in-house/statics/2022.2-EAP/intellij/0.12.1, default, releases+snapshots)
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not transfer artifact reserved.recommenders:metadata:json:0.0.0-SNAPSHOT from/to models (https://jb-dap-test.s3.eu-central-1.amazonaws.com/repositories/java-in-house/statics/2022.2-EAP/intellij/0.12.1): Connect to jb-dap-test.s3.eu-central-1.amazonaws.com:443 timed out
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:425)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:229)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:207)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:262)
+	at com.intellij.recommenders.models.AetherClient.resolveInternal(AetherClient.java:170)
+	at com.intellij.recommenders.models.AetherClient.resolve(AetherClient.java:148)
+	at com.intellij.recommenders.models.AetherClient.resolve(AetherClient.java:132)
+	at com.intellij.recommenders.models.AetherBasedModelsRepository.refresh(ModelsRepository.kt:47)
+	at com.intellij.recommenders.models.TxtBasedModelsIndex$loadMetadata$$inlined$runAsync$1.run(promise.kt:421)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:702)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:699)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:699)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact reserved.recommenders:metadata:json:0.0.0-SNAPSHOT from/to models (https://jb-dap-test.s3.eu-central-1.amazonaws.com/repositories/java-in-house/statics/2022.2-EAP/intellij/0.12.1): Connect to jb-dap-test.s3.eu-central-1.amazonaws.com:443 timed out
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:52)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:368)
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:75)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:642)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:262)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:514)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:402)
+	... 15 more
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to jb-dap-test.s3.eu-central-1.amazonaws.com:443 timed out
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:545)
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:415)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.impl.client.DecompressingHttpClient.execute(DecompressingHttpClient.java:164)
+	at org.eclipse.aether.transport.http.HttpTransporter.execute(HttpTransporter.java:296)
+	at org.eclipse.aether.transport.http.HttpTransporter.implGet(HttpTransporter.java:252)
+	at org.eclipse.aether.spi.connector.transport.AbstractTransporter.get(AbstractTransporter.java:68)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:456)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:363)
+	... 20 more
+2023-01-10 13:17:17,442 [2166220]   WARN - c.i.r.m.AetherClient - Failed to download 'reserved.recommenders:index::txt:0.0.0' from models (https://jb-dap-test.s3.eu-central-1.amazonaws.com/repositories/java-in-house/statics/2022.2-EAP/intellij/0.12.1, default, releases+snapshots)
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not transfer artifact reserved.recommenders:index:txt:0.0.0-SNAPSHOT from/to models (https://jb-dap-test.s3.eu-central-1.amazonaws.com/repositories/java-in-house/statics/2022.2-EAP/intellij/0.12.1): Connect to jb-dap-test.s3.eu-central-1.amazonaws.com:443 timed out
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:425)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:229)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:207)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:262)
+	at com.intellij.recommenders.models.AetherClient.resolveInternal(AetherClient.java:170)
+	at com.intellij.recommenders.models.AetherClient.resolve(AetherClient.java:148)
+	at com.intellij.recommenders.models.AetherClient.resolve(AetherClient.java:132)
+	at com.intellij.recommenders.models.AetherBasedModelsRepository.refresh(ModelsRepository.kt:47)
+	at com.intellij.recommenders.models.PersistentMapModelsIndex.refresh(ModelsIndex.kt:134)
+	at com.intellij.recommenders.models.ModelsIndexWithRefresh.scheduleIndexUpdatesJob$lambda$0(ModelsIndex.kt:196)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at com.intellij.util.concurrency.SchedulingWrapper$MyScheduledFutureTask.run(SchedulingWrapper.java:275)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:702)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:699)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:699)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact reserved.recommenders:index:txt:0.0.0-SNAPSHOT from/to models (https://jb-dap-test.s3.eu-central-1.amazonaws.com/repositories/java-in-house/statics/2022.2-EAP/intellij/0.12.1): Connect to jb-dap-test.s3.eu-central-1.amazonaws.com:443 timed out
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:52)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:368)
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:75)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:642)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:262)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:514)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:402)
+	... 19 more
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to jb-dap-test.s3.eu-central-1.amazonaws.com:443 timed out
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:545)
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:415)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.impl.client.DecompressingHttpClient.execute(DecompressingHttpClient.java:164)
+	at org.eclipse.aether.transport.http.HttpTransporter.execute(HttpTransporter.java:296)
+	at org.eclipse.aether.transport.http.HttpTransporter.implGet(HttpTransporter.java:252)
+	at org.eclipse.aether.spi.connector.transport.AbstractTransporter.get(AbstractTransporter.java:68)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:456)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:363)
+	... 24 more
+2023-01-10 13:57:30,883 [4579661]   WARN - #c.i.o.a.i.ActionUpdater - 15228 ms to call on BGT AnalyzeVulnerableDependencies#update@GoToAction (org.jetbrains.security.actions.AnalyzeVulnerableDependencies)
+2023-01-10 13:58:06,510 [4615288]   WARN - #com.android.tools.idea.avdmanager.AvdManagerConnection - No Android SDK Found
+2023-01-10 13:58:09,888 [4618666]   WARN - #c.i.i.a.s.WaitForContributorsListenerWrapper - Contributor (FileSearchEverywhereContributor) did not finish search in timeout (3000). Maybe it should implement PossibleSlowContributor interface
+2023-01-10 14:54:30,543 [7999321]   WARN - #o.j.j.d.IdeaDecompiler - Inconsistent generic signature in method <init> (Ljava/lang/String;I)V in org/springframework/boot/test/web/client/TestRestTemplate$HttpClientOption [org/springframework/boot/test/web/client/TestRestTemplate]
+2023-01-10 14:58:39,989 [8248767]   WARN - #com.android.tools.idea.avdmanager.AvdManagerConnection - No Android SDK Found
+2023-01-10 14:58:43,354 [8252132]   WARN - #c.i.i.a.s.WaitForContributorsListenerWrapper - Contributor (FileSearchEverywhereContributor) did not finish search in timeout (3000). Maybe it should implement PossibleSlowContributor interface
+2023-01-10 15:03:52,432 [8561210]   WARN - #com.android.tools.idea.avdmanager.AvdManagerConnection - No Android SDK Found
+2023-01-10 16:36:48,191 [14136969]   WARN - #c.i.e.RunManager - Must be not called before project components initialized
+2023-01-10 16:36:48,324 [14137102]   WARN - #c.i.o.w.i.ToolWindowImpl - ToolWindow icons should be 13x13. Please fix ToolWindow (ID:  JPA Buddy) or icon UrlResolver{ownerClass=com.haulmont.jpb.JpaIcons, classLoader=PluginClassLoader(plugin=PluginDescriptor(name=JPA Buddy, id=com.haulmont.jpab, descriptorPath=plugin.xml, path=~/.local/share/JetBrains/IntelliJIdea2022.3/jpa-buddy, version=2022.5.2-223, package=null, isBundled=false), packagePrefix=null, instanceId=358, state=active), overriddenPath='/META-INF/buddyIconMono.svg', url=file:/unresolved, useCacheOnLoad=true}
+2023-01-10 16:36:49,221 [14137999]   WARN - #o.j.i.maven - Using extension org.jetbrains.idea.maven.maven3.Maven3Support@359e8bc8 to start MavenServer
+Changing log factory from com.haulmont.jpb.logger.JpabLoggerFactory to com.haulmont.jpb.logger.JpabLoggerFactory
+java.lang.Throwable
+	at com.intellij.openapi.diagnostic.Logger.logFactoryChanged(Logger.java:79)
+	at com.intellij.openapi.diagnostic.Logger.setFactory(Logger.java:70)
+	at com.haulmont.jpb.action.persistenceunit.PersistenceUnitStartupActivity.runActivity(PersistenceUnitStartupActivity.kt:44)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runActivityAndMeasureDuration(StartupManagerImpl.kt:340)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.access$runActivityAndMeasureDuration(StartupManagerImpl.kt:66)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$2$3.invoke$lambda$0(StartupManagerImpl.kt:295)
+	at com.intellij.openapi.project.DumbServiceImpl.doRun(DumbServiceImpl.java:388)
+	at com.intellij.openapi.project.DumbServiceImpl.updateFinished(DumbServiceImpl.java:380)
+	at com.intellij.openapi.project.TrackedEdtActivityService$TrackedEdtActivity.run(TrackedEdtActivityService.java:66)
+	at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:209)
+	at com.intellij.openapi.application.TransactionGuardImpl.access$100(TransactionGuardImpl.java:21)
+	at com.intellij.openapi.application.TransactionGuardImpl$1.run(TransactionGuardImpl.java:191)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:813)
+	at com.intellij.openapi.application.impl.ApplicationImpl$3.run(ApplicationImpl.java:429)
+	at com.intellij.openapi.application.impl.FlushQueue.doRun(FlushQueue.java:74)
+	at com.intellij.openapi.application.impl.FlushQueue.runNextEvent(FlushQueue.java:114)
+	at com.intellij.openapi.application.impl.FlushQueue.flushNow(FlushQueue.java:36)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:779)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:730)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:724)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:749)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:909)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:756)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$5(IdeEventQueue.java:437)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:772)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$6(IdeEventQueue.java:436)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:105)
+	at com.intellij.ide.IdeEventQueue.performActivity(IdeEventQueue.java:615)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$7(IdeEventQueue.java:434)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:813)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:480)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
+
+2023-01-10 16:37:02,847 [14151625] SEVERE - #c.i.v.l.d.i.IndexDiagnosticRunner - Index is corrupted
+Details: VcsLogIndexDiagnosticReport.txt
+Diff for commit 2b44d2ecd0de646a698baec463f5b5f7d3bcbeba
+Filtering by files:[/home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/README.md, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/pom.xml, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/applicaiton/AccountApplicationService.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/applicaiton/payment/PaymentApplicationService.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/applicaiton/payment/dto/Settlement.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/domain/account/validation/AccountValidation.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/domain/auth/Role.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/domain/payment/Payment.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/domain/payment/PaymentService.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/domain/payment/Stockpile.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/domain/payment/StockpileService.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/domain/payment/WalletRepository.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/domain/payment/WalletService.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/domain/warehouse/Product.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/domain/warehouse/ProductService.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/infrastructure/cache/CacheConfiguration.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/infrastructure/jaxrs/AccessDeniedExceptionMapper.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/infrastructure/jaxrs/CodedMessage.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/infrastructure/jaxrs/GlobalExceptionHandler.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/infrastructure/jaxrs/ViolationExceptionMapper.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/infrastructure/utility/Encryption.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/resource/AccountResource.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/resource/PaymentResource.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/resource/ProductResource.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/resources/application-test.yml, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/resources/db/hsqldb/data.sql, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/resources/db/hsqldb/schema.sql, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/test/java/com/github/fenixsoft/bookstore/BookstoreApplicationTests.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/test/java/com/github/fenixsoft/bookstore/DBRollbackBase.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/test/java/com/github/fenixsoft/bookstore/resource/AccountResourceTest.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/test/java/com/github/fenixsoft/bookstore/resource/AdvertisementResourceTest.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/test/java/com/github/fenixsoft/bookstore/resource/AuthResourceTest.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/test/java/com/github/fenixsoft/bookstore/resource/JAXRSResourceBase.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/test/java/com/github/fenixsoft/bookstore/resource/PaymentResourceTest.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/test/java/com/github/fenixsoft/bookstore/resource/ProductResourceTest.java] does not return 2b44d2ec
+
+Diff for commit 82a95ac2a24e6c6940fe8106796ca7927fd692a6
+Filtering by files:[/home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/pom.xml] does not return 82a95ac2
+
+Diff for commit 4e45eac937daf9cbceb868b9e82e5bbad7a7ea1d
+Filtering by files:[/home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/resources/static/static/css/app.acff6d0da14b65448084a2639e44b2ef.css, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/resources/static/static/js/1.adddfb80b9441d8bc19d.js, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/resources/static/static/js/manifest.1aeebcd3a724536ddb12.js] does not return 4e45eac9
+
+Diff for commit c4e6c43e5c03bfc5e55a9375149fe0aed6c2121c
+Filtering by files:[/home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/applicaiton/payment/PaymentApplicationService.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/domain/payment/PaymentService.java] does not return c4e6c43e
+
+Diff for commit e035ddcb0db40072c6f00de9d396504116b1a26e
+Filtering by files:[/home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/infrastructure/configuration/AuthenticationServerConfiguration.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/java/com/github/fenixsoft/bookstore/infrastructure/configuration/WebSecurityConfiguration.java, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/resources/application.yml] does not return e035ddcb
+
+Diff for commit dedc919c4c77585b9c9a7ae6ec55fbaf29f0e67c
+Filtering by files:[/home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/.travis.yml, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/README.md, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/pom.xml] does not return dedc919c
+
+Diff for commit 5bb26a55900eb2d0691f231b285122b0d0140871
+Filtering by files:[/home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/.travis.yml, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/pom.xml] does not return 5bb26a55
+
+Diff for commit 0e092b2be1e8339d64dd9cd8fb453006bde2fffd
+Filtering by files:[/home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/.travis.yml] does not return 0e092b2b
+
+Diff for commit 2df211cb1c6c602345eda5ba78d61f643d8d9668
+Filtering by files:[/home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/README.md, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/pom.xml, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/resources/static/index.html, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/resources/static/static/board/gitalk.css, /home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/src/main/resources/static/static/board/gitalk.html] does not return 2df211cb
+
+Diff for commit 1c8a9672a02bd792d9587bda1e8c20b5b6be6350
+Filtering by files:[/home/ankh/learn/distributed_sys_learn/monolithic_arch_springboot/pom.xml] does not return 1c8a9672
+
+
+java.lang.RuntimeException: Index is corrupted
+	at com.intellij.vcs.log.data.index.IndexDiagnosticRunner.runDiagnostic(IndexDiagnosticRunner.kt:54)
+	at com.intellij.vcs.log.data.index.IndexDiagnosticRunner.onDataPackChange(IndexDiagnosticRunner.kt:66)
+	at com.intellij.vcs.log.data.VcsLogData.fireDataPackChangeEvent(VcsLogData.java:246)
+	at com.intellij.vcs.log.data.VcsLogRefresherImpl.lambda$new$0(VcsLogRefresherImpl.java:81)
+	at com.intellij.vcs.log.data.SingleTaskController.taskCompleted(SingleTaskController.java:156)
+	at com.intellij.vcs.log.data.VcsLogRefresherImpl$MyRefreshTask.run(VcsLogRefresherImpl.java:220)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.startTask(CoreProgressManager.java:423)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.startTask(ProgressManagerImpl.java:114)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcessWithProgressAsynchronously$6(CoreProgressManager.java:474)
+	at com.intellij.openapi.progress.impl.ProgressRunner.lambda$submit$3(ProgressRunner.java:252)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:188)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$executeProcessUnderProgress$13(CoreProgressManager.java:589)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:664)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computeUnderProgress(CoreProgressManager.java:620)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:588)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:60)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:175)
+	at com.intellij.openapi.progress.impl.ProgressRunner.lambda$submit$4(ProgressRunner.java:252)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:702)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:699)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:699)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-01-10 16:37:02,848 [14151626] SEVERE - #c.i.v.l.d.i.IndexDiagnosticRunner - IntelliJ IDEA 2022.3.1  Build #IU-223.8214.52
+2023-01-10 16:37:02,848 [14151626] SEVERE - #c.i.v.l.d.i.IndexDiagnosticRunner - JDK: 17.0.4; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o.
+2023-01-10 16:37:02,848 [14151626] SEVERE - #c.i.v.l.d.i.IndexDiagnosticRunner - OS: Linux
+2023-01-10 16:37:12,763 [14161541]   WARN - #c.i.i.s.download - Shared indexes download was cancelled. Indexing has completed faster
+2023-01-10 16:37:14,843 [14163621]   WARN - #o.j.s.s.VulnerableApiService - Processing VulnerablePath(class=ECPoint, fileName=Org.BouncyCastle.Math.EC/ECPoint.cs, functionName=Normalize, functionParams=(), functionModifier=public virtual ECPoint)
+com.intellij.util.IncorrectOperationException: Incorrect method 'public virtual ECPoint Normalize ()'
+	at com.intellij.psi.impl.PsiJavaParserFacadeImpl.newException(PsiJavaParserFacadeImpl.java:388)
+	at com.intellij.psi.impl.PsiJavaParserFacadeImpl.createMethodFromText(PsiJavaParserFacadeImpl.java:184)
+	at com.intellij.psi.impl.PsiJavaParserFacadeImpl.createMethodFromText(PsiJavaParserFacadeImpl.java:193)
+	at org.jetbrains.security.service.VulnerableApiService$bindToFqn$2$1$1.invoke(VulnerableApiService.kt:120)
+	at org.jetbrains.security.service.VulnerableApiService$bindToFqn$2$1$1.invoke(VulnerableApiService.kt:107)
+	at com.intellij.openapi.application.rw.InternalReadAction.insideReadAction(InternalReadAction.kt:90)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$insideReadAction(InternalReadAction.kt:15)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadCancellable$1.invoke(InternalReadAction.kt:74)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadCancellable$1.invoke(InternalReadAction.kt:73)
+	at com.intellij.openapi.progress.CancellationKt.withCurrentJob$lambda$0(cancellation.kt:17)
+	at com.intellij.openapi.progress.Cancellation.withCurrentJob(Cancellation.java:60)
+	at com.intellij.openapi.progress.CancellationKt.withCurrentJob(cancellation.kt:17)
+	at com.intellij.openapi.progress.CancellationKt.executeWithJobAndCompleteIt(cancellation.kt:125)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt.cancellableReadActionInternal$lambda$1$lambda$0(cancellableReadAction.kt:49)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1086)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt.cancellableReadActionInternal$lambda$1(cancellableReadAction.kt:47)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtilService.runActionAndCancelBeforeWrite(ProgressIndicatorUtilService.java:63)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtils.runActionAndCancelBeforeWrite(ProgressIndicatorUtils.java:128)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt.cancellableReadActionInternal(cancellableReadAction.kt:45)
+	at com.intellij.openapi.application.rw.InternalReadAction.tryReadCancellable(InternalReadAction.kt:73)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$tryReadCancellable(InternalReadAction.kt:15)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadAction$2.invoke(InternalReadAction.kt:59)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadAction$2.invoke(InternalReadAction.kt:54)
+	at com.intellij.openapi.progress.CancellationKt.withCurrentJob$lambda$0(cancellation.kt:17)
+	at com.intellij.openapi.progress.Cancellation.withCurrentJob(Cancellation.java:60)
+	at com.intellij.openapi.progress.CancellationKt.withCurrentJob(cancellation.kt:17)
+	at com.intellij.openapi.progress.CoroutinesKt.blockingContext(coroutines.kt:142)
+	at com.intellij.openapi.application.rw.InternalReadAction.tryReadAction(InternalReadAction.kt:54)
+	at com.intellij.openapi.application.rw.InternalReadAction.readLoop(InternalReadAction.kt:46)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$readLoop(InternalReadAction.kt:15)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$2.invokeSuspend(InternalReadAction.kt:27)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$2.invoke(InternalReadAction.kt)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$2.invoke(InternalReadAction.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:89)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:169)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.openapi.application.rw.InternalReadAction.runReadAction(InternalReadAction.kt:23)
+	at com.intellij.openapi.application.rw.PlatformReadActionSupport.executeReadAction(PlatformReadActionSupport.kt:24)
+	at com.intellij.openapi.application.CoroutinesKt.constrainedReadAction(coroutines.kt:51)
+	at com.intellij.openapi.application.CoroutinesKt.smartReadAction(coroutines.kt:30)
+	at org.jetbrains.security.service.VulnerableApiService.bindToFqn(VulnerableApiService.kt:107)
+	at org.jetbrains.security.service.VulnerableApiService.access$bindToFqn(VulnerableApiService.kt:29)
+	at org.jetbrains.security.service.VulnerableApiService$libraryToVulnerabilityFlow$1.invokeSuspend(VulnerableApiService.kt:69)
+	at org.jetbrains.security.service.VulnerableApiService$libraryToVulnerabilityFlow$1.invoke(VulnerableApiService.kt)
+	at org.jetbrains.security.service.VulnerableApiService$libraryToVulnerabilityFlow$1.invoke(VulnerableApiService.kt)
+	at kotlinx.coroutines.flow.FlowKt__ZipKt$combine$1$1.invokeSuspend(Zip.kt:33)
+	at kotlinx.coroutines.flow.FlowKt__ZipKt$combine$1$1.invoke(Zip.kt)
+	at kotlinx.coroutines.flow.FlowKt__ZipKt$combine$1$1.invoke(Zip.kt)
+	at kotlinx.coroutines.flow.internal.CombineKt$combineInternal$2.invokeSuspend(Combine.kt:79)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: java.lang.AssertionError: Unexpected token: 'Normalize'
+	at com.intellij.lang.java.parser.JavaParserUtil.parseFragment(JavaParserUtil.java:210)
+	at com.intellij.psi.impl.source.tree.JavaElementType$JavaDummyElementType.parseContents(JavaElementType.java:277)
+	at com.intellij.psi.impl.source.tree.LazyParseableElement.lambda$ensureParsed$2(LazyParseableElement.java:175)
+	at com.intellij.psi.impl.DebugUtil.performPsiModification(DebugUtil.java:481)
+	at com.intellij.psi.impl.source.tree.LazyParseableElement.ensureParsed(LazyParseableElement.java:174)
+	at com.intellij.psi.impl.source.tree.LazyParseableElement.getFirstChildNode(LazyParseableElement.java:226)
+	at com.intellij.psi.impl.source.JavaDummyElement.getFirstChildNode(JavaDummyElement.java:69)
+	at com.intellij.psi.impl.PsiJavaParserFacadeImpl.createMethodFromText(PsiJavaParserFacadeImpl.java:182)
+	... 53 more
+2023-01-10 16:51:10,958 [14999736]   WARN - #o.j.i.maven - Storage corrupted /home/ankh/.cache/JetBrains/IntelliJIdea2022.3/Maven/Indices/Index0/data2/versions-map.dat.values
+com.intellij.util.io.CorruptedException: Storage corrupted /home/ankh/.cache/JetBrains/IntelliJIdea2022.3/Maven/Indices/Index0/data2/versions-map.dat.values
+	at com.intellij.util.io.PersistentHashMapValueStorage.readBytes(PersistentHashMapValueStorage.java:537)
+	at com.intellij.util.io.PersistentMapImpl.doGet(PersistentMapImpl.java:608)
+	at com.intellij.util.io.PersistentMapImpl.get(PersistentMapImpl.java:549)
+	at com.intellij.util.io.PersistentHashMap.get(PersistentHashMap.java:169)
+	at org.jetbrains.idea.maven.indices.MavenIndex.lambda$hasVersion$10(MavenIndex.java:500)
+	at org.jetbrains.idea.maven.indices.MavenIndex.doIndexTask(MavenIndex.java:534)
+	at org.jetbrains.idea.maven.indices.MavenIndex.hasVersion(MavenIndex.java:500)
+	at org.jetbrains.idea.maven.indices.MavenIndicesManager.hasLocalVersion(MavenIndicesManager.java:164)
+	at org.jetbrains.idea.maven.dom.converters.MavenArtifactCoordinatesVersionConverter.doIsValid(MavenArtifactCoordinatesVersionConverter.kt:80)
+	at org.jetbrains.idea.maven.dom.converters.MavenArtifactCoordinatesConverter$ConverterStrategy.isValid(MavenArtifactCoordinatesConverter.java:201)
+	at org.jetbrains.idea.maven.dom.converters.MavenArtifactCoordinatesConverter.fromString(MavenArtifactCoordinatesConverter.java:56)
+	at org.jetbrains.idea.maven.dom.converters.MavenArtifactCoordinatesVersionConverter.fromString(MavenArtifactCoordinatesVersionConverter.kt:35)
+	at org.jetbrains.idea.maven.dom.converters.MavenArtifactCoordinatesVersionConverter.fromString(MavenArtifactCoordinatesVersionConverter.kt:32)
+	at com.intellij.util.xml.impl.GetInvocation.getValueInner(GetInvocation.java:96)
+	at com.intellij.util.xml.impl.GetInvocation.getOrCalcValue(GetInvocation.java:71)
+	at com.intellij.util.xml.impl.GetInvocation.invoke(GetInvocation.java:59)
+	at com.intellij.util.xml.impl.DomInvocationHandler.invoke(DomInvocationHandler.java:655)
+	at com.intellij.util.xml.GenericDomValue$$EnhancerByJetBrainsMainCglib$$2e754a1e.getValue(<generated>)
+	at com.intellij.util.xml.impl.GenericDomValueReference.resolve(GenericDomValueReference.java:123)
+	at org.jetbrains.idea.maven.dom.MavenDomProjectProcessorUtils.processDependencyRecurrently(MavenDomProjectProcessorUtils.java:340)
+	at org.jetbrains.idea.maven.dom.MavenDomProjectProcessorUtils.lambda$processDependenciesInDependencyManagement$8(MavenDomProjectProcessorUtils.java:370)
+	at org.jetbrains.idea.maven.dom.MavenDomProjectProcessorUtils.processProject(MavenDomProjectProcessorUtils.java:475)
+	at org.jetbrains.idea.maven.dom.MavenDomProjectProcessorUtils.process(MavenDomProjectProcessorUtils.java:420)
+	at org.jetbrains.idea.maven.dom.MavenDomProjectProcessorUtils$3.doProcessParent(MavenDomProjectProcessorUtils.java:438)
+	at org.jetbrains.idea.maven.dom.MavenDomProjectProcessorUtils$3.doProcessParent(MavenDomProjectProcessorUtils.java:431)
+	at org.jetbrains.idea.maven.project.MavenParentProjectFileProcessor.processRepositoryParent(MavenParentProjectFileProcessor.java:102)
+	at org.jetbrains.idea.maven.project.MavenParentProjectFileProcessor.findInLocalRepository(MavenParentProjectFileProcessor.java:82)
+	at org.jetbrains.idea.maven.project.MavenParentProjectFileProcessor.process(MavenParentProjectFileProcessor.java:68)
+	at org.jetbrains.idea.maven.dom.MavenDomProjectProcessorUtils$DomParentProjectFileProcessor.process(MavenDomProjectProcessorUtils.java:543)
+	at org.jetbrains.idea.maven.dom.MavenDomProjectProcessorUtils.processParentProjectFile(MavenDomProjectProcessorUtils.java:440)
+	at org.jetbrains.idea.maven.dom.MavenDomProjectProcessorUtils.process(MavenDomProjectProcessorUtils.java:422)
+	at org.jetbrains.idea.maven.dom.MavenDomProjectProcessorUtils$3.doProcessParent(MavenDomProjectProcessorUtils.java:438)
+	at org.jetbrains.idea.maven.dom.MavenDomProjectProcessorUtils$3.doProcessParent(MavenDomProjectProcessorUtils.java:431)
+	at org.jetbrains.idea.maven.project.MavenParentProjectFileProcessor.processRepositoryParent(MavenParentProjectFileProcessor.java:102)
+	at org.jetbrains.idea.maven.project.MavenParentProjectFileProcessor.findInLocalRepository(MavenParentProjectFileProcessor.java:82)
+	at org.jetbrains.idea.maven.project.MavenParentProjectFileProcessor.process(MavenParentProjectFileProcessor.java:51)
+	at org.jetbrains.idea.maven.dom.MavenDomProjectProcessorUtils$DomParentProjectFileProcessor.process(MavenDomProjectProcessorUtils.java:543)
+	at org.jetbrains.idea.maven.dom.MavenDomProjectProcessorUtils.processParentProjectFile(MavenDomProjectProcessorUtils.java:440)
+	at org.jetbrains.idea.maven.dom.MavenDomProjectProcessorUtils.process(MavenDomProjectProcessorUtils.java:422)
+	at org.jetbrains.idea.maven.dom.MavenDomProjectProcessorUtils.process(MavenDomProjectProcessorUtils.java:404)
+	at org.jetbrains.idea.maven.dom.MavenDomProjectProcessorUtils.processDependenciesInDependencyManagement(MavenDomProjectProcessorUtils.java:378)
+	at org.jetbrains.idea.maven.dom.converters.MavenDependencyCompletionUtil.findManagedDependency(MavenDependencyCompletionUtil.java:64)
+	at org.jetbrains.idea.maven.dom.converters.MavenArtifactCoordinatesHelper.getMavenId(MavenArtifactCoordinatesHelper.kt:40)
+	at org.jetbrains.idea.maven.dom.converters.MavenArtifactCoordinatesHelper.getId(MavenArtifactCoordinatesHelper.kt:14)
+	at org.jetbrains.idea.maven.dom.converters.MavenArtifactCoordinatesConverter.fromString(MavenArtifactCoordinatesConverter.java:51)
+	at org.jetbrains.idea.maven.dom.converters.MavenArtifactCoordinatesConverter.fromString(MavenArtifactCoordinatesConverter.java:46)
+	at com.intellij.util.xml.impl.GetInvocation.getValueInner(GetInvocation.java:96)
+	at com.intellij.util.xml.impl.GetInvocation.getOrCalcValue(GetInvocation.java:71)
+	at com.intellij.util.xml.impl.GetInvocation.invoke(GetInvocation.java:59)
+	at com.intellij.util.xml.impl.DomInvocationHandler.invoke(DomInvocationHandler.java:655)
+	at com.intellij.util.xml.GenericDomValue$$EnhancerByJetBrainsMainCglib$$2e754a1e.getValue(<generated>)
+	at com.intellij.util.xml.impl.GenericDomValueReference.resolve(GenericDomValueReference.java:123)
+	at com.intellij.codeInsight.TargetElementUtilBase.getReferencedElement(TargetElementUtilBase.java:177)
+	at com.intellij.codeInsight.TargetElementUtilBase.doGetReferenceOrReferencedElement(TargetElementUtilBase.java:165)
+	at com.intellij.codeInsight.TargetElementUtilBase.getReferenceOrReferencedElement(TargetElementUtilBase.java:210)
+	at com.intellij.codeInsight.TargetElementUtilBase.getReferencedElement(TargetElementUtilBase.java:254)
+	at com.intellij.codeInsight.TargetElementUtilBase.doFindTargetElement(TargetElementUtilBase.java:233)
+	at com.intellij.codeInsight.TargetElementUtilBase.findTargetElement(TargetElementUtilBase.java:298)
+	at com.intellij.codeInsight.TargetElementUtil.findTargetElement(TargetElementUtil.java:147)
+	at com.intellij.model.psi.impl.TargetsKt.fromTargetEvaluator(targets.kt:173)
+	at com.intellij.model.psi.impl.TargetsKt.declarationsOrReferences(targets.kt:134)
+	at com.intellij.model.psi.impl.TargetsKt.declaredReferencedData(targets.kt:41)
+	at com.intellij.model.psi.impl.TargetsKt.targetSymbols(targets.kt:23)
+	at com.intellij.codeInsight.daemon.impl.IdentifierHighlighterPass.getTargetSymbols(IdentifierHighlighterPass.java:194)
+	at com.intellij.codeInsight.daemon.impl.IdentifierHighlighterPass.highlightReferencesAndDeclarations(IdentifierHighlighterPass.java:186)
+	at com.intellij.codeInsight.daemon.impl.IdentifierHighlighterPass.doCollectInformation(IdentifierHighlighterPass.java:91)
+	at com.intellij.codeInsight.highlighting.BackgroundHighlighter.lambda$updateHighlighted$1(BackgroundHighlighter.java:155)
+	at com.intellij.codeInsight.highlighting.BackgroundHighlightingUtil.lambda$lookForInjectedFileInOtherThread$0(BackgroundHighlightingUtil.java:57)
+	at com.intellij.openapi.application.impl.NonBlockingReadActionImpl$OTelMonitor.callWrapped(NonBlockingReadActionImpl.java:746)
+	at com.intellij.openapi.application.impl.NonBlockingReadActionImpl$OTelMonitor$MonitoredComputation.call(NonBlockingReadActionImpl.java:778)
+	at com.intellij.openapi.application.impl.NonBlockingReadActionImpl$Submission.insideReadAction(NonBlockingReadActionImpl.java:573)
+	at com.intellij.openapi.application.impl.NonBlockingReadActionImpl$Submission.lambda$attemptComputation$3(NonBlockingReadActionImpl.java:537)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1086)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtils.lambda$runInReadActionWithWriteActionPriority$0(ProgressIndicatorUtils.java:71)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtilService.runActionAndCancelBeforeWrite(ProgressIndicatorUtilService.java:63)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtils.runActionAndCancelBeforeWrite(ProgressIndicatorUtils.java:128)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtils.lambda$runWithWriteActionPriority$1(ProgressIndicatorUtils.java:109)
+	at com.intellij.openapi.progress.ProgressManager.lambda$runProcess$0(ProgressManager.java:68)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:188)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$executeProcessUnderProgress$13(CoreProgressManager.java:589)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:664)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computeUnderProgress(CoreProgressManager.java:620)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:588)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:60)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:175)
+	at com.intellij.openapi.progress.ProgressManager.runProcess(ProgressManager.java:68)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtils.runWithWriteActionPriority(ProgressIndicatorUtils.java:106)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtils.runInReadActionWithWriteActionPriority(ProgressIndicatorUtils.java:71)
+	at com.intellij.openapi.application.impl.NonBlockingReadActionImpl$Submission.attemptComputation(NonBlockingReadActionImpl.java:537)
+	at com.intellij.openapi.application.impl.NonBlockingReadActionImpl$Submission.lambda$transferToBgThread$1(NonBlockingReadActionImpl.java:444)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:702)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:699)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:699)
+	at java.base/java.lang.Thread.run(Thread.java:833)
