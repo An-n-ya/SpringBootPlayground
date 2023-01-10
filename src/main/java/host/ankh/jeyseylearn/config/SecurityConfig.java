@@ -22,7 +22,8 @@ public class SecurityConfig {
                         .requestMatchers("/", "/index.html").permitAll()
                         .anyRequest().authenticated())
                 .formLogin(Customizer.withDefaults())
-                .logout(Customizer.withDefaults());
+                .logout(Customizer.withDefaults())
+                .csrf().disable();
         return http.build();
     }
 
