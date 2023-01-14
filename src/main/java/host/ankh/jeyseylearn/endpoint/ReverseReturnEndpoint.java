@@ -16,7 +16,4 @@ public class ReverseReturnEndpoint {
     public String reverse(@QueryParam("data") @NotNull String data) {
         return new StringBuilder(data).reverse().toString();
     }
-
-
-
 }
