@@ -20,8 +20,13 @@ public class SecurityConfig {
         http.
                 authorizeHttpRequests((request) -> request
                         .requestMatchers("/", "/index.html").permitAll()
-                        .anyRequest().authenticated())
-                .formLogin(Customizer.withDefaults())
+                        .anyRequest().authenticated()
+                )
+                .formLogin(form -> form
+                        .loginProcessingUrl("/login")
+                        .loginPage("/login.html")
+                        .permitAll()
+                )
                 .logout(Customizer.withDefaults())
                 .csrf().disable();
         return http.build();

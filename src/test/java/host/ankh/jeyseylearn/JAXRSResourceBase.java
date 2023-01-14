@@ -8,14 +8,12 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.NewCookie;
 import jakarta.ws.rs.core.Response;
 import org.glassfish.jersey.client.ClientProperties;
-import org.glassfish.jersey.client.HttpUrlConnectorProvider;
 import org.junit.platform.commons.logging.Logger;
 import org.junit.platform.commons.logging.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Map;
-import java.util.function.Supplier;
 
 @SpringBootTest(classes = Application.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class JAXRSResourceBase {
@@ -68,19 +66,6 @@ public class JAXRSResourceBase {
 
     Response get(String path) {
         var res = build(path).get();
-//        log.error(new Supplier<String>() {
-//            String ANSI_RESET = "\u001B[0m\n";
-//            String ANSI_BLUE = "\u001B[34m";
-//            @Override
-//            public String get() {
-//                var sb = new StringBuilder();
-//                sb.append(ANSI_BLUE);
-//                sb.append(res.toString());
-//                sb.append(res.readEntity(String.class));
-//                sb.append(ANSI_RESET);
-//                return sb.toString();
-//            }
-//        });
         return res;
     }
 
