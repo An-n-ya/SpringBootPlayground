@@ -16,4 +16,19 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
+
+	@Bean
+	public CommandLineRunner demo(AccountRepository repository) {
+		return (args) -> {
+			// save a few customers
+			repository.save(new Account("user", "$2a$10$zVTkhDKZNuEvO/Gtgp7QhOHGos5AFTSEeA308jOj/HUxzH4k0VOc2", "ankh", "17199999999", "ankh04@icloud.com"));
+			// fetch all customers
+			log.info("Customers found with findAll():");
+			log.info("-------------------------------");
+			for (Account account : repository.findAll()) {
+				log.info(account.toString());
+			}
+			log.info("");
+		};
+	}
 }

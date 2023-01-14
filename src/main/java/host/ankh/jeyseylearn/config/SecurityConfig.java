@@ -43,7 +43,7 @@ public class SecurityConfig {
 //        UserDetails user =
 //                User.withDefaultPasswordEncoder()
 //                        .username("user")
-//                        .password("user")
+//                        .password("$2a$10$XiN.XAfCkJ6sH.4DF8Q80.NKq.iCh2y.QdYCFMEGTVSI0oR7WESua")
 //                        .roles(Role.USER)
 //                        .build();
 //

@@ -21,8 +21,8 @@ public class AuthenticAccountRepository {
         for (Account account : accountRepository.findAll()) {
             log.info(account.toString());
         }
-        Account a = accountRepository.findByUsername("user").get();
-        log.info("a = " + a.toString());
+//        Account a = accountRepository.findByUsername("user").get();
+//        log.info("a = " + a.toString());
 
         return new AuthenticAccount(accountRepository.findByUsername(username).get());
     }
