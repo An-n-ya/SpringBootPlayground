@@ -18,7 +18,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.Map;
 
-@Sql(scripts = {"classpath:schema-hsqldb.sql", "classpath:data-hsqldb.sql"})
+@Sql(scripts = {"classpath:schema.sql", "classpath:data.sql"})
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(classes = Application.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class JAXRSResourceBase {

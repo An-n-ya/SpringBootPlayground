@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS account;
 
 CREATE TABLE account(
-    id          INTEGER IDENTITY PRIMARY KEY,
+    id          IDENTITY PRIMARY KEY,
     username    VARCHAR(50),
     password    VARCHAR(100),
     name        VARCHAR(50),

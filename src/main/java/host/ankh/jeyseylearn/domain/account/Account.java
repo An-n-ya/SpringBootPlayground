@@ -17,10 +17,6 @@ public class Account{
 
     private String username;
 
-    // 密码字段不参与序列化，但参与反序列化
-    // 密码字段不参与更新，但参与插入
-//    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-//    @Column(updatable = false)
     private String password;
 
     private String name;
