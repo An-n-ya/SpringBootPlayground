@@ -1,7 +1,13 @@
 package host.ankh.jeyseylearn;
 
 import host.ankh.jeyseylearn.domain.account.Account;
+import jakarta.ws.rs.client.ClientBuilder;
+import jakarta.ws.rs.client.Entity;
+import jakarta.ws.rs.client.Invocation;
+import jakarta.ws.rs.core.Form;
 import jakarta.ws.rs.core.Link;
+import jakarta.ws.rs.core.MediaType;
+import org.glassfish.jersey.client.ClientProperties;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Marker;
 
@@ -59,5 +65,28 @@ class JerseyLearnApplicationTests extends JAXRSResourceBase {
 		var account = new Account("ankh", "ankh", "ankh", "17911112222", "ankh04@icloud.com");
 		var res = post_json("/account/create", account);
 		assertOK(res);
+	}
+
+
+	@Test
+	void createAccountAndLoginWithThisAccount() throws Exception {
+		var account = new Account("ankh", "ankh", "ankh", "17911112222", "ankh04@icloud.com");
+		post_json("/account/create", account);
+		Form form = new Form();
+		form.param("username", "ankh");
+		form.param("password", "ankh");
+		Invocation.Builder builder = ClientBuilder.newClient()
+				.target("http://localhost:" + port + "/login")
+				.property(ClientProperties.FOLLOW_REDIRECTS, false)
+				.request(MediaType.MULTIPART_FORM_DATA).accept(MediaType.TEXT_PLAIN);
+		var res = builder.post(Entity.form(form));
+		// 应该会重定位到主页
+		assertRedirect(res);
+		// 设置cookies
+		setCookies(res.getCookies());
+		// 访问需要权限的接口
+		var res2 = get("/reverse?data=hello");
+		assertOK(res2);
+		assert res2.readEntity(String.class).equals("olleh");
 	}
 }
