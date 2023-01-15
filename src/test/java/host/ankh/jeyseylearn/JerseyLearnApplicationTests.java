@@ -89,4 +89,16 @@ class JerseyLearnApplicationTests extends JAXRSResourceBase {
 		assertOK(res2);
 		assert res2.readEntity(String.class).equals("olleh");
 	}
+
+	@Test
+	void createWrongAccount() throws Exception {
+		// 创建错误的用户
+		// 应该会出发ConstraintViolationException
+		var account = new Account();
+		// 故意不设置用户名
+		account.setPassword("123");
+		var res = post_json("/account/create", account);
+		// 应该是badRequest
+		assertBadRequest(res);
+	}
 }
