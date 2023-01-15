@@ -27,6 +27,7 @@ public class AccountEndpoint {
 
     @POST
     @Path("/create")
+    // 如果这里的Valid验证失败，会抛出ValidationException
     public Response create(@Valid Account account) {
         return CommonResponse.op(() -> accountService.createAccount(account));
     }
