@@ -1,10 +1,7 @@
 package host.ankh.jeyseylearn.endpoint;
 
 import jakarta.validation.constraints.NotNull;
-import jakarta.ws.rs.GET;
-import jakarta.ws.rs.Path;
-import jakarta.ws.rs.Produces;
-import jakarta.ws.rs.QueryParam;
+import jakarta.ws.rs.*;
 import org.springframework.stereotype.Service;
 
 @Service

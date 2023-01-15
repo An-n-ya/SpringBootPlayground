@@ -1,5 +1,6 @@
 package host.ankh.jeyseylearn.config;
 
+import host.ankh.jeyseylearn.endpoint.AccountEndpoint;
 import host.ankh.jeyseylearn.endpoint.HelloEndpoint;
 import host.ankh.jeyseylearn.endpoint.ReverseReturnEndpoint;
 import jakarta.ws.rs.ApplicationPath;
@@ -12,6 +13,7 @@ public class JerseyConfig extends ResourceConfig {
     public JerseyConfig() {
         register(HelloEndpoint.class);
         register(ReverseReturnEndpoint.class);
+        register(AccountEndpoint.class);
     }
 }
 

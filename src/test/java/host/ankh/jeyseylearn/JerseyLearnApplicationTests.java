@@ -1,5 +1,6 @@
 package host.ankh.jeyseylearn;
 
+import host.ankh.jeyseylearn.domain.account.Account;
 import jakarta.ws.rs.core.Link;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Marker;
@@ -42,5 +43,21 @@ class JerseyLearnApplicationTests extends JAXRSResourceBase {
 			assertOK(res);
 			assert res.readEntity(String.class).equals("olleh");
 		});
+	}
+
+	@Test
+	void createAccountWithAuth() throws Exception {
+		authenticatedScope(() -> {
+			var account = new Account("ankh", "ankh", "ankh", "17911112222", "ankh04@icloud.com");
+			var res = post_json("/account/create", account);
+			assertOK(res);
+		});
+	}
+
+	@Test
+	void createAccountWithoutAuth() throws Exception {
+		var account = new Account("ankh", "ankh", "ankh", "17911112222", "ankh04@icloud.com");
+		var res = post_json("/account/create", account);
+		assertOK(res);
 	}
 }

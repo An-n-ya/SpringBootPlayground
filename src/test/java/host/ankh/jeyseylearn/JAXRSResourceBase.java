@@ -8,6 +8,7 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.NewCookie;
 import jakarta.ws.rs.core.Response;
 import org.glassfish.jersey.client.ClientProperties;
+import org.glassfish.jersey.client.HttpUrlConnectorProvider;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,6 +35,20 @@ public class JAXRSResourceBase {
                 .target("http://localhost:" + port + "/api" + path)
                 .property(ClientProperties.FOLLOW_REDIRECTS, false)
                 .request(MediaType.MULTIPART_FORM_DATA).accept(MediaType.TEXT_PLAIN);
+        if (cookies != null) {
+            // 如果cookies不为空，说明已经登录，把cookies都传进去
+            for (var cookie:cookies.entrySet()) {
+                builder.cookie(cookie.getValue());
+            }
+        }
+        return builder;
+    }
+
+    Invocation.Builder build_json(String path) {
+        Invocation.Builder builder = ClientBuilder.newClient()
+                .target("http://localhost:" + port + "/api" + path)
+                .property(ClientProperties.FOLLOW_REDIRECTS, false)
+                .request(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON);
         if (cookies != null) {
             // 如果cookies不为空，说明已经登录，把cookies都传进去
             for (var cookie:cookies.entrySet()) {
@@ -74,8 +89,12 @@ public class JAXRSResourceBase {
         return res;
     }
 
-    Response post(String path, Object entity) {
+    Response post_form(String path, Object entity) {
         return build(path).post(Entity.form((Form) entity));
+    }
+
+    Response post_json(String path, Object entity) {
+        return build_json(path).post(Entity.json(entity));
     }
 
 

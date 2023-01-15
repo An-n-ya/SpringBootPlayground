@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+#http POST http://localhost:8088/api/account/create username=ankh password=ankh name=ankh telephone=17399998888 email=ankh04@icloud.com --offline 
+http POST http://localhost:8088/api/account/create username=ankh password=ankh name=ankh telephone=17399998888 email=ankh04@icloud.com 
