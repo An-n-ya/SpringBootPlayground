@@ -45,6 +45,7 @@
         <input id="verifycode-btn" type="button" value="获取验证码">
     </div>
     <div>
+        <input id="return-btn" type="button" value="返回">
         <input type="submit" value="确认">
     </div>
 </form>
@@ -75,6 +76,10 @@
             btn.value = "获取验证码"
         }, 1000 * waitTime);
     });
+
+    document.querySelector("#return-btn").addEventListener("click", (e) => {
+        window.location.href = "login.html";
+    })
 
 </script>
 </html>
