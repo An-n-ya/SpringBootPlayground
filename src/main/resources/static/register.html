@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        input {
+            display: inline-block;
+            margin-top: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        html, body{
+            height: 100%;
+            width: 100%;
+        }
+        div.verifycode-box {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+        }
+    </style>
+    <title>Register</title>
+</head>
+<body>
+<form action="/register" method="post">
+    <div>
+        register page
+    </div>
+    <input type="text" name="username" placeholder="请输入用户名">
+    <input type="password" name="password" placeholder="请输入密码">
+    <input type="password" name="password" placeholder="请确认密码">
+    <div class="verifycode-box">
+        <input type="text" name="verifycode" placeholder="请输入验证码">
+        <input id="verifycode-btn" type="button" value="获取验证码">
+    </div>
+    <div>
+        <input type="submit" value="确认">
+    </div>
+</form>
+
+</body>
+
+<script>
+    document.querySelector("#verifycode-btn").addEventListener("click", (e) => {
+        let btn = e.target;
+        // 将button禁用
+        btn.disabled = true;
+        // 等待时间，单位为秒
+        let waitTime = 10;
+        // setInterval方法给的id, 用来取消interval
+        let intervId;
+        if (!intervId) {
+            let curCount = 1;
+            btn.value = `10秒后再试`;
+            // 启动一个间隔为1秒的定时器
+            intervId = setInterval(() => {
+                btn.value = `${waitTime - curCount}秒后再试`;
+                curCount += 1;
+            }, 1000);
+        }
+        setTimeout(() => {
+            btn.disabled = false;
+            clearInterval(intervId);
+            btn.value = "获取验证码"
+        }, 1000 * waitTime);
+    });
+
+</script>
+</html>

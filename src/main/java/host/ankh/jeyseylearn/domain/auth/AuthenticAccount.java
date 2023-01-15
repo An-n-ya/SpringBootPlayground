@@ -1,6 +1,7 @@
 package host.ankh.jeyseylearn.domain.auth;
 
 import host.ankh.jeyseylearn.domain.account.Account;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
@@ -14,17 +15,14 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 
+@Slf4j
 public class AuthenticAccount extends Account implements UserDetails {
-    Logger log = LoggerFactory.getLogger(AuthenticAccount.class);
 
     //  放置实例权限的哈希set
     private Collection<GrantedAuthority> authorities = new HashSet<>();
 
     public AuthenticAccount() {
         super();
-        // 默认是用户权限
-//        Collections
-//                .unmodifiableList(AuthorityUtils.createAuthorityList(Role.USER));
         authorities.add(new SimpleGrantedAuthority(Role.USER));
     }
 
