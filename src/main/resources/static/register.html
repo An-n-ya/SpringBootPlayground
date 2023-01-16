@@ -24,7 +24,7 @@
             height: 100%;
             width: 100%;
         }
-        div.verifycode-box {
+        div.verifycode-box, div.btn-group-box {
             display: flex;
             gap: 10px;
             width: 100%;
@@ -33,7 +33,7 @@
     <title>Register</title>
 </head>
 <body>
-<form action="/register" method="post">
+<form action="/api/account/create" method="post">
     <div>
         register page
     </div>
@@ -44,7 +44,7 @@
         <input type="text" name="verifycode" placeholder="请输入验证码">
         <input id="verifycode-btn" type="button" value="获取验证码">
     </div>
-    <div>
+    <div class="btn-group-box">
         <input id="return-btn" type="button" value="返回">
         <input type="submit" value="确认">
     </div>
@@ -54,16 +54,17 @@
 
 <script>
     document.querySelector("#verifycode-btn").addEventListener("click", (e) => {
+        // TODO: 添加字段校验功能
         let btn = e.target;
         // 将button禁用
         btn.disabled = true;
         // 等待时间，单位为秒
-        let waitTime = 10;
+        let waitTime = 60;
         // setInterval方法给的id, 用来取消interval
         let intervId;
         if (!intervId) {
             let curCount = 1;
-            btn.value = `10秒后再试`;
+            btn.value = `${waitTime}秒后再试`;
             // 启动一个间隔为1秒的定时器
             intervId = setInterval(() => {
                 btn.value = `${waitTime - curCount}秒后再试`;
@@ -79,7 +80,7 @@
 
     document.querySelector("#return-btn").addEventListener("click", (e) => {
         window.location.href = "login.html";
-    })
+    });
 
 </script>
 </html>

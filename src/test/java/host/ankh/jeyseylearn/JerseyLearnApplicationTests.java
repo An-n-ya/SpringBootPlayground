@@ -49,6 +49,7 @@ class JerseyLearnApplicationTests extends JAXRSResourceBase {
 			assertOK(res);
 			assert res.readEntity(String.class).equals("olleh");
 		});
+
 	}
 
 	@Test

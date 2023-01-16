@@ -49,7 +49,4 @@ public abstract class CommonResponse {
         // log.error用法：接受两个参数，错误信息String：e.getMessage(), 错误对象Throwable: e
         return op(runner, e -> log.error(e.getMessage(), e));
     }
-
-
-
 }
